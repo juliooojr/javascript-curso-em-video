@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+
+    <style>
+        body {
+            background-color: rgb(191, 191, 235);
+            color: white; /*Comentário em CSS*/
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>  
+
+<body>
+    <h1>Olá, mundo!</h1>
+
+    <p>Já me livrei da maldição!!</p> <!--Comentário em HTML-->
+
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')) //o window.prompt retorna o dado no formato String
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+
+        //para converter string para número podemos utilizar:
+        //Number.parseInt(n) -> para números inteiros
+        //Number.parseFloat(n) -> para números reais
+        //Nas versões mais atuais basta Number(n) que ele reconhece, somente para caros específicos que devemos separar
+        
+        var soma = n1 + n2
+
+        window.alert('A soma dos valores é: ' + soma + '!')
+        // o sinal + pode ser utilizado para 2 coisas:
+        // (number + number) para adição
+        // (string + string) para concatenação
+
+
+        // De Número para string:
+        // String(n) ou
+        // n.toString()
+    </script>
+    
+</body>
+</html>
