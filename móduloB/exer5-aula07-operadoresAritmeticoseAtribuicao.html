@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos e Atribuição</title>
+
+    <style>
+        body {
+            font: normal 20pt Arial;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+
+        // Os operadores Aritméticos são: + - * / % **
+        // a divisão com / -> é divisão real
+        // a divisão com % -> é o resto da divisão (divisão inteira)
+        // ** -> potência
+
+
+        // Ordem de precedência -> () ** * / % + - -> Primeiro parenteses, potência, multiplicacação divisão e porcentagem, soma e subtração
+
+        // Sinal de = em uma expressão significa RECEBE
+
+        var number1 = Number(window.prompt('Digite um número:'))
+        var number2 = Number(window.prompt('Digite outro número:'))
+
+        document.write(`A soma dos números é: ${number1 + number2}</br>`)
+        document.write(`A subtração dos números é: ${number1 - number2}</br>`)
+        document.write(`A multiplicação dos números é: ${number1 * number2}</br>`)
+        document.write(`A divisão real dos números é: ${number1 / number2}</br>`)
+        document.write(`A divisão inteira números é: ${number1 % number2}</br>`)
+        document.write(`A potência dos números é: ${number1 ** number2}</br>`)
+
+        // --- Operadores de Atribuição //
+
+        // Se a varíavel for receber ela mesma pode-se simplificar:
+
+        // n = n + 4 é o mesmo que n+=4
+        // n = n * 2 é o mesmo que n*=2 e assim para todas as operações
+
+        // Incremento -> pode-se simplificar aind mais o x +=1 para x ++ ou x --
+        // Existe o pré incremento -> ++ x ou -- x
+
+    </script>
+    
+</body>
+</html>

@@ -21,8 +21,8 @@
     <p>Já me livrei da maldição!!</p> <!--Comentário em HTML-->
 
     <script>
-        var n1 = Number.parseInt(window.prompt('Digite um número: ')) //o window.prompt retorna o dado no formato String
-        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var n1 = Number(window.prompt('Digite um número: ')) //o window.prompt retorna o dado no formato String
+        var n2 = Number(window.prompt('Digite outro número: '))
 
         //para converter string para número podemos utilizar:
         //Number.parseInt(n) -> para números inteiros
@@ -31,7 +31,7 @@
         
         var soma = n1 + n2
 
-        window.alert('A soma dos valores é: ' + soma + '!')
+        window.alert(`A soma entre ${n1} e ${n2} é igual a: ${soma}`)
         // o sinal + pode ser utilizado para 2 coisas:
         // (number + number) para adição
         // (string + string) para concatenação

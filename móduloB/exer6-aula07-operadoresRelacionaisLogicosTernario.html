@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais Lógicos Ternário.html</title>
+
+    <style>
+        body {
+            font: normal 20pt Arial;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+
+        // Os operadores Relacionais são: > < >= <= == !=
+        // !!IMPORTANTE!! O RESULTADO de operadores relacioanis é sempre BOOLEANO!
+
+        var number1 = Number(window.prompt('Digite um número:'))
+        var number2 = Number(window.prompt('Digite outro número:'))
+
+        document.write(`O primeiro número é maior que o segundo? ${number1 > number2}</br>`)
+        document.write(`O primeiro número é menor que o segundo? ${number1 < number2}</br>`)
+        document.write(`O primeiro número é maior igual que o segundo? ${number1 >= number2}</br>`)
+        document.write(`O primeiro número é menor igual que o segundo? ${number1 <= number2}</br>`)
+        document.write(`O primeiro número é igual ao segundo? ${number1 == number2}</br>`)
+        document.write(`O primeiro número é diferente do segundo? ${number1 != number2}</br>`)
+
+        // Operadores de IDENTIDADE
+
+        // Para o JS 5 == 5 e 5 == '5' os dois dão verdadeiro pois o sinal de igualdade não testa o TIPO, o valor 5 inteiro é o mesmo valor 5 em string.
+        // Para testar tipos diferentes temos o operador de IGUALDADE RESTRITA:
+        // 5 === '5'  -> Testa para ver se eles são idênticos(mesmo valor e mesmo tipo) -> false
+        // 5 === 5 -> true
+
+        // 5 !== '5' -> true (São de tipos diferentes)
+
+
+        // Operadores Lógicos são: ! && ||
+        // ! -> Negação Só tem 1 operando
+        // && -> conjunção (e) Dois valores lógicos
+        // || -> disjunção (ou) Dois valores lógicos
+
+        // Ordem dos operadores lógicos: Não -> E -> Ou
+        // Ordem de vários operadores: Aritméticos -> Relacionais -> Lógicos
+
+
+        // Operadores Ternários são: ? :
+        // Se chama 3 partes porque sempre tem 3 partes:
+        // teste ? true : false
+        /// Exemplo: média => 7 ? "Aprovado" : "Reprovado"
+
+    </script>
+    
+</body>
+</html>

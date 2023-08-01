@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação String e Number</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+
+</head>
+<body>
+    
+    
+    <script>
+        // Formatação String
+        var nome = window.prompt("Qual é o seu nome?")
+
+        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras</br>`) //É possível usar tags HTMLs dentro do JS
+        document.write(`Seu nome em maiúsculas é: ${nome.toUpperCase()} </br>`)
+        document.write(`Seu nome em minúsculo é: ${nome.toLowerCase()}</br>`)
+
+        // Formatação Number
+
+        var numero = Number(window.prompt("Digite um número real: "))
+
+        document.write(`O número digitado com 2 casas decimais é ${numero.toFixed(2)}</br>`)
+        document.write(`O número digitado com vírgula e 1 casa decimal é ${numero.toFixed(1).replace('.', ',')}</br>`)
+
+        // String Localizada (Real R$)
+
+        document.write(`O valor digitado em reais é: ${numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</br>`)
+        document.write(`O valor digitado em dólares é: ${numero.toLocaleString('en', {style: 'currency', currency: 'USD'})}`)
+
+    </script>
+</body>
+</html>
