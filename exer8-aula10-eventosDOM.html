@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM - Adicionar via HTML</title>
+
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+
+        #area {
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area" onclick="clicar()" onmouseover="entrou()" onmouseout="saiu()">Interaja...</div>
+
+
+    <script>
+
+        // Incluído os eventos no HTML
+        function clicar() {
+            var b = document.querySelector('#area')
+            b.style.color = 'blue'
+
+            var a = window.document.getElementById('area')
+            a.innerText = 'Clicou'
+        }
+
+        function entrou() {
+            var bg = window.document.getElementsByTagName('div')[0]
+            bg.innerText = 'Entrou'
+            bg.style.backgroundColor = 'black'
+        }
+
+        function saiu() {
+            var s = window.document.querySelector('div#area')
+            s.style.backgroundColor = 'pink'
+            s.innerText = 'Saiu'
+            s.style.color = 'white'
+        }
+
+
+    </script>
+</body>
+</html>
