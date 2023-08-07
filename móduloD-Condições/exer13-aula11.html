@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN - Condição Compostas</title>
+</head>
+<body> 
+    <h1>Sistema de Multas</h1>
+
+    Digite seu país de origen: <input type="text" name="txtname" id="txtname">
+    <input type="button" value="Verificar" onclick="verificar()">
+    
+    <div class="res">
+
+    </div>
+
+    <script>
+    
+        function verificar() {
+
+            var txtn = window.document.getElementById('txtname')
+            var res = window.document.querySelector('div.res')
+
+            var país = (txtn.value) //Ver com murillo
+
+            res.innerHTML = `<p>Você nasceu no/na: <strong>${país}</strong></p>`
+
+            if (país == 'brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro!</p>`
+            }
+            
+        }
+
+
+    </script>
+</body>
+</html>
